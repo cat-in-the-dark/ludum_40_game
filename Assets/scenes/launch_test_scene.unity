@@ -480,6 +480,8 @@ MonoBehaviour:
   enemyTex: {fileID: 2800000, guid: 2749b13e8f23142e5899aa02b732ed43, type: 3}
   brick: {fileID: 1931994403792346, guid: 034f9c7897e2342a496d32d3b399796f, type: 2}
   alwaysDamaged: 1197
+  damageToWin: 30
+  ps: {fileID: 0}
   damage: 0
 --- !u!1001 &1486335706
 Prefab:
