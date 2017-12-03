@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 212535295118086004}
   m_Layer: 0
   m_Name: Komod
-  m_TagString: Untagged
+  m_TagString: Movable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78,8 +78,8 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.345, y: 0.905}
-    newSize: {x: 1.225, y: 0.66}
+    oldSize: {x: 2.69, y: 1.81}
+    newSize: {x: 2.69, y: 1.81}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -125,12 +125,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d39738b7731d9419db44aa037ebca7c2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9515fde7198324d5285b1cf9838587f4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.225, y: 0.66}
+  m_Size: {x: 2.69, y: 1.81}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
