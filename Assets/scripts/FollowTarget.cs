@@ -12,12 +12,14 @@ public class FollowTarget : MonoBehaviour
 	
 	private float defaultCameraSize;
 	private float maxCameraSize;
+	private Vector3 defaultPosition;
 
 	private void Start()
 	{
 		camera = GetComponent<Camera>();
 		defaultCameraSize = camera.orthographicSize;
 		maxCameraSize = defaultCameraSize * maxCameraSizeMultiplier;
+		defaultPosition = transform.position;
 	}
 
 	// Update is called once per frame
@@ -51,5 +53,11 @@ public class FollowTarget : MonoBehaviour
 			newPosition.y = projectile.position.y - maxCameraSize;
 			transform.position = newPosition;
 		}
+	}
+
+	public void Reset()
+	{
+		camera.orthographicSize = defaultCameraSize;
+		transform.position = defaultPosition;
 	}
 }
