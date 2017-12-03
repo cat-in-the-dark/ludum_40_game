@@ -48,10 +48,10 @@ public class DragWeapon : MonoBehaviour
 				//hit.collider.attachedRigidbody.AddForce(Vector2.up);
 				forDrag = hit.collider.gameObject;
 			}
-//			else
-//			{
-//				forDrag = null;
-//			}
+			else
+			{
+				forDrag = null;
+			}
 		}
 
 		if (Input.GetMouseButton(0) && forDrag != null)
