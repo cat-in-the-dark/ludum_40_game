@@ -42,7 +42,7 @@ public class DragWeapon : MonoBehaviour
 			RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
 			Debug.Log("hit");
 
-			if (hit.collider != null)
+			if (hit.collider != null && hit.collider.gameObject.name != "Rocket")
 			{
 				Debug.Log(hit.collider.gameObject.name);
 				//hit.collider.attachedRigidbody.AddForce(Vector2.up);
