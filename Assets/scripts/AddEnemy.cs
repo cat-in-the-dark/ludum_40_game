@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AddEnemy : MonoBehaviour
 {
 	public Texture2D enemyTex;
 	public GameObject brick;
 	public float alwaysDamaged = 1197;
+	public float damageToWin = 20;
 
 	
 	public float damage = 0f; // Just to see this in editor
@@ -92,7 +94,8 @@ public class AddEnemy : MonoBehaviour
 		else
 		{
 			lastUpdate = 0;
-			damage = CalculateDamage() - alwaysDamaged;	
+			damage = CalculateDamage() - alwaysDamaged;
+			CheckWin();
 		}
 	}
 
@@ -108,5 +111,15 @@ public class AddEnemy : MonoBehaviour
 		}
 
 		return dmg;
+	}
+
+	private void CheckWin()
+	{
+		if (damage >= damageToWin)
+		{
+			Debug.Log(string.Format("Win with score: {0}", damage));
+			Debug.Log("Go to start");
+			SceneManager.LoadScene(0);
+		}
 	}
 }
