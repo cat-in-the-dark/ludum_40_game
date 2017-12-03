@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class RestartGame : MonoBehaviour
 {
-	public String gameSceneName;
+	public int sceneIndex = 0;
 	
 	
 	// Use this for initialization
@@ -18,7 +18,7 @@ public class RestartGame : MonoBehaviour
 	void Update () {
 		if (Input.GetButtonDown("Cancel"))
 		{
-			SceneManager.LoadScene(gameSceneName);
+			SceneManager.LoadScene(sceneIndex);
 		}
 	}
 }

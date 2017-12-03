@@ -187,7 +187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 490aaaddce76a45868a533af8cbaca61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameSceneName: 
+  sceneIndex: 0
 --- !u!114 &156414883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -267,6 +267,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114898316945748172, guid: ddd903b56ea5c469baf66593be4378e5,
+        type: 2}
+      propertyPath: followTarget
+      value: 
+      objectReference: {fileID: 1398567315}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ddd903b56ea5c469baf66593be4378e5, type: 2}
   m_IsPrefabParent: 0
@@ -322,6 +327,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b085d7ea4818344e087a1bb45ca8e6bc, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1398567315 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114770509834621358, guid: b085d7ea4818344e087a1bb45ca8e6bc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1398567314}
+  m_Script: {fileID: 11500000, guid: b1883d18b75784bf398167397a56e05b, type: 3}
 --- !u!1001 &1965224763
 Prefab:
   m_ObjectHideFlags: 0
