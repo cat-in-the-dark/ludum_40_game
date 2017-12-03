@@ -111,14 +111,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.8, y: 1}
+    oldSize: {x: 3.52, y: 0.76}
     newSize: {x: 3.48, y: 4.96}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.8, y: 1}
+  m_Size: {x: 3.5, y: 0.8}
   m_EdgeRadius: 0
 --- !u!82 &82635773314347634
 AudioSource:
@@ -213,6 +213,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runAudio: {fileID: 8300000, guid: a6674590193494a8cb411f23fab0d6d9, type: 3}
   idleAudio: {fileID: 8300000, guid: 1db8d13f2f82441d2a74eb6466e68ffe, type: 3}
+  followTarget: {fileID: 0}
   thrust: 0.8
 --- !u!198 &198465251007664420
 ParticleSystem:
@@ -3619,10 +3620,10 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6415fedfadbfe432cb734b5cd3d31749, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f2bde4c9c837e4e039d7b79ddb644154, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
-  m_FlipY: 1
+  m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 3.48, y: 4.96}
   m_AdaptiveModeThreshold: 0.5
