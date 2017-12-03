@@ -56,7 +56,6 @@ public class DragWeapon : MonoBehaviour
 
 		if (Input.GetMouseButton(0) && forDrag != null)
 		{
-			Debug.Log("drag!");
 			Vector2 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 			forDrag.GetComponent<Transform>().position = new Vector3(pos.x, pos.y, 0f);	
 		}
