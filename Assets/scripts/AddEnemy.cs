@@ -9,6 +9,7 @@ public class AddEnemy : MonoBehaviour
 	public GameObject brick;
 	public float alwaysDamaged = 1197;
 	public float damageToWin = 20;
+	public int winScreenIndex = 6;
 
 	
 	public float damage = 0f; // Just to see this in editor
@@ -119,7 +120,7 @@ public class AddEnemy : MonoBehaviour
 		{
 			Debug.Log(string.Format("Win with score: {0}", damage));
 			Debug.Log("Go to start");
-			SceneManager.LoadScene(0);
+			SceneManager.LoadScene(winScreenIndex);
 		}
 	}
 }
