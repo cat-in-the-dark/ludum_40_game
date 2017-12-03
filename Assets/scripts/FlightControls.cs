@@ -5,6 +5,10 @@ using UnityEngine;
 public class FlightControls : MonoBehaviour
 {
 
+	public AudioClip runAudio;
+	public AudioClip idleAudio;
+	private AudioSource source;
+	
 	public float thrust;
 	private Rigidbody2D rb;
 	private bool running = false;
@@ -13,6 +17,7 @@ public class FlightControls : MonoBehaviour
 	void Start ()
 	{
 		rb = GetComponent<Rigidbody2D>();
+		source = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -25,7 +30,12 @@ public class FlightControls : MonoBehaviour
 	{
 		if (running)
 		{
-			rb.AddForce(transform.up * thrust, ForceMode2D.Impulse);  // Do we really need Impulse? Maybe Force?
+			rb.AddForce(transform.up * thrust, ForceMode2D.Impulse); // Do we really need Impulse? Maybe Force?
+			playRun();
+		}
+		else
+		{
+			playIdle();
 		}
 	}
 
@@ -38,6 +48,30 @@ public class FlightControls : MonoBehaviour
 		else
 		{
 			running = false;
+		}
+	}
+
+	private void playRun()
+	{
+		if (!source.isPlaying)
+		{
+			source.Play();
+		}
+		if (source.clip != runAudio)
+		{
+			source.clip = runAudio;
+		}
+	}
+
+	private void playIdle()
+	{
+		if (!source.isPlaying)
+		{
+			source.Play();
+		}
+		if (source.clip != idleAudio)
+		{
+			source.clip = idleAudio;
 		}
 	}
 }
