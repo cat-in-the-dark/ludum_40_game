@@ -7,9 +7,9 @@ public class AddEnemy : MonoBehaviour
 {
 	public Texture2D enemyTex;
 	public GameObject brick;
-	private float alwaysDamaged = 1640;
-	public float damageToWin = 100;
-	public int winScreenIndex = 6;
+	public float alwaysDamaged;
+	public float damageToWin;
+	public int winScreenIndex;
 
 	
 	public float damage = 0f; // Just to see this in editor
