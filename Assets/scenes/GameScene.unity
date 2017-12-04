@@ -167,7 +167,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4316852925644546, guid: ae9424ea440f345008feea81dd8e8520, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.03606701
+      value: 2.95
       objectReference: {fileID: 0}
     - target: {fileID: 4316852925644546, guid: ae9424ea440f345008feea81dd8e8520, type: 2}
       propertyPath: m_LocalPosition.y
@@ -416,8 +416,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyTex: {fileID: 2800000, guid: 2749b13e8f23142e5899aa02b732ed43, type: 3}
   brick: {fileID: 1931994403792346, guid: 034f9c7897e2342a496d32d3b399796f, type: 2}
-  alwaysDamaged: 1640
-  damageToWin: 40
+  alwaysDamaged: 0
+  damageToWin: 0.4
   winScreenIndex: 8
   damage: 0
 --- !u!114 &156414884
@@ -917,7 +917,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4727622689001118, guid: 2a6e186a402fe4b1a945ffc45844dee8, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 5.0801697
+      value: 12.07
       objectReference: {fileID: 0}
     - target: {fileID: 4727622689001118, guid: 2a6e186a402fe4b1a945ffc45844dee8, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1295,7 +1295,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4841771205206572, guid: ddd903b56ea5c469baf66593be4378e5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.27
+      value: 2.64
       objectReference: {fileID: 0}
     - target: {fileID: 4841771205206572, guid: ddd903b56ea5c469baf66593be4378e5, type: 2}
       propertyPath: m_LocalPosition.y
