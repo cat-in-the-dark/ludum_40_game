@@ -1158,7 +1158,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 218000ed9273744cea3c92ae2e973daa, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1333,7 +1333,7 @@ Prefab:
     - target: {fileID: 114898316945748172, guid: ddd903b56ea5c469baf66593be4378e5,
         type: 2}
       propertyPath: thrust
-      value: 2
+      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ddd903b56ea5c469baf66593be4378e5, type: 2}
@@ -1356,7 +1356,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4830290323104870, guid: b085d7ea4818344e087a1bb45ca8e6bc, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.61
+      value: -2.7
       objectReference: {fileID: 0}
     - target: {fileID: 4830290323104870, guid: b085d7ea4818344e087a1bb45ca8e6bc, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1390,7 +1390,17 @@ Prefab:
     - target: {fileID: 20149628546458956, guid: b085d7ea4818344e087a1bb45ca8e6bc,
         type: 2}
       propertyPath: orthographic size
-      value: 11
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114770509834621358, guid: b085d7ea4818344e087a1bb45ca8e6bc,
+        type: 2}
+      propertyPath: padding
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114770509834621358, guid: b085d7ea4818344e087a1bb45ca8e6bc,
+        type: 2}
+      propertyPath: maxCameraSizeMultiplier
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b085d7ea4818344e087a1bb45ca8e6bc, type: 2}

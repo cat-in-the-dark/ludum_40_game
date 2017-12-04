@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 0}
-  maxCameraSizeMultiplier: 4
+  maxCameraSizeMultiplier: 1.5
   padding: 1.5
 --- !u!124 &124824247003576760
 Behaviour:

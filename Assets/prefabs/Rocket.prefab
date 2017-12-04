@@ -214,7 +214,7 @@ MonoBehaviour:
   runAudio: {fileID: 8300000, guid: a6674590193494a8cb411f23fab0d6d9, type: 3}
   idleAudio: {fileID: 8300000, guid: 1db8d13f2f82441d2a74eb6466e68ffe, type: 3}
   followTarget: {fileID: 0}
-  thrust: 0.8
+  thrust: 1
 --- !u!198 &198465251007664420
 ParticleSystem:
   m_ObjectHideFlags: 1

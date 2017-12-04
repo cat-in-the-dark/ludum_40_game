@@ -7,12 +7,13 @@ public class FollowTarget : MonoBehaviour
 {
 	public Transform projectile;
 	private Camera camera;
-	public float maxCameraSizeMultiplier = 4;
-	public float padding = 1.5f;
+	public float maxCameraSizeMultiplier;
+	public float padding;
 	
 	private float defaultCameraSize;
 	private float maxCameraSize;
 	private Vector3 defaultPosition;
+	private float initProjectileY;
 
 	private void Start()
 	{
@@ -20,6 +21,7 @@ public class FollowTarget : MonoBehaviour
 		defaultCameraSize = camera.orthographicSize;
 		maxCameraSize = defaultCameraSize * maxCameraSizeMultiplier;
 		defaultPosition = transform.position;
+		initProjectileY = projectile.transform.position.y;
 	}
 
 	// Update is called once per frame
@@ -38,20 +40,20 @@ public class FollowTarget : MonoBehaviour
 	}
 
 	private void FitY()
-	{	
-		if (projectile.position.y * padding <= defaultCameraSize)
+	{
+		var y = projectile.position.y - initProjectileY - transform.position.y - padding;
+		Debug.Log(y);
+		if (y <= defaultCameraSize)
 		{
 			camera.orthographicSize = defaultCameraSize;
 		}
-		else if (projectile.position.y <= maxCameraSize)
+		else if (y <= maxCameraSize)
 		{
-			camera.orthographicSize = projectile.position.y * padding;
+			camera.orthographicSize = (projectile.position.y - initProjectileY) * maxCameraSizeMultiplier;
 		}
 		else
 		{
-			Vector3 newPosition = transform.position;
-			newPosition.y = projectile.position.y - maxCameraSize;
-			transform.position = newPosition;
+			// Do Nothing!
 		}
 	}
 
