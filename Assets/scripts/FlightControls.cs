@@ -7,10 +7,12 @@ public class FlightControls : MonoBehaviour
 
 	public AudioClip runAudio;
 	public AudioClip idleAudio;
-	private AudioSource source;
 	public FollowTarget followTarget;
-	
+	public ParticleSystem strongFire;
+	public ParticleSystem weakFire;
 	public float thrust;
+	
+	private AudioSource source;
 	private Rigidbody2D rb;
 	private bool running = false;
 	private Vector3 initialPosition;
@@ -41,10 +43,14 @@ public class FlightControls : MonoBehaviour
 		if (running)
 		{
 			rb.AddForce(transform.up * thrust, ForceMode2D.Impulse); // Do we really need Impulse? Maybe Force?
+			if (strongFire.isStopped) strongFire.Play();
+			if (weakFire.isPlaying) weakFire.Stop();
 			playRun();
 		}
 		else
 		{
+			if (strongFire.isPlaying) strongFire.Stop();
+			if (weakFire.isStopped) weakFire.Play();
 			playIdle();
 		}
 	}
