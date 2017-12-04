@@ -42,7 +42,6 @@ public class FollowTarget : MonoBehaviour
 	private void FitY()
 	{
 		var y = projectile.position.y - initProjectileY - transform.position.y - padding;
-		Debug.Log(y);
 		if (y <= defaultCameraSize)
 		{
 			camera.orthographicSize = defaultCameraSize;
